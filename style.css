@@ -11,6 +11,9 @@ body{
     font-family:'Noto Sans', sans-serif;
     font-size: 50px;
     line-height: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .logo{
