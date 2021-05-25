@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 body{
-    background-color: black;
+    background:url('./logos/Background.png');
     background-size: cover;
     background-repeat:repeat;
     height:auto;
@@ -9,22 +10,45 @@ body{
     color: white;
     font-family:'Noto Sans', sans-serif;
     font-size: 50px;
-     line-height: 1;
+    line-height: 1;
 }
+
+.logo{
+    
+    width: 60px;
+    padding-left: 5rem;
+
+}
+.logo:hover{
+    opacity: 0.5;
+}
+.planet{
+    opacity: 0.5;
+    height:30px;
+    width: 30px;
+    padding-right: 4rem;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.lower-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
 .circle{
-    height: 11rem;
-    width: 11rem;
+    height: 8rem;
+    width: 8rem;
     background-color: rgb(68, 68, 68);
     border-radius: 50%;
-    margin-left: 8rem;
-    margin-top: 2rem;
-    opacity: 0.7;
 }
 #circle-reveal{
-    font-size: 25px;
-    margin-left: 3.2rem;
-    padding-top: 4.5rem;
     font-size: 0px;
+    margin: 3.5rem 2rem;
 }
 .circle:hover{
     opacity: 1;
@@ -32,11 +56,22 @@ body{
 }
 
 .circle:hover #circle-reveal{
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.circle:hover img{
+ display: none;
+}
+
+.circle img{
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
 }
 
 .center-content{
-    margin-top: -3rem;
+    align-items: center;
+    justify-content: center;  
 }
 .text-container{
     text-align: center;
@@ -44,31 +79,33 @@ body{
 }
 
  h1:hover, h4:hover{
-    font-family: 'Playfair Display', serif;
-    color: black;
+    font-family: 'Noto Serif', serif;
     font-style:italic;
-    text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
-    line-height: 1;
     transition: text-shadow 0.1s ease-in; 
+    color: rgba(0, 0, 0, 0);
+    /* -webkit-text-fill-color: white; */
+    -webkit-text-stroke-width: 0.01rem;
+    -webkit-text-stroke-color: white;
 }
+.lower{
+margin: 2rem;
+}
+
 h4{
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 hr{
-    margin-top: 4px;
-    border-bottom: 2px solid white;
+    border-bottom: 0.4px solid white;
     width: 230px;
 }
 
-img{
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
+
+.lower img{
+    height: 40px;
+    /* width: 35px; */
+    margin: 0 14px;
     opacity: 0.5;
 }
 img:hover{
