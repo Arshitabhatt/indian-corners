@@ -51,19 +51,44 @@
         </div>       
         <div class="lower-info-text">
             
-            <div id="gmail">
+            <div id="gmail" class="tooltip">
                 <img src="./logos/Icon simple-gmail@3x.png" alt="" > 
-                indiancornersinfo@gmail.com
+                <span class="tooltiptext" id="myTooltipe">Copy to clipboard</span>
+                <span id="email" onclick="copyEmail()" onmouseout="outFunc()">indiancornersinfo@gmail.com </span>    
             </div>
 
-            <div id="whatsapp">
+            <div id="whatsapp" class="tooltip">
+                <span class="tooltiptext" id="myTooltipn">Copy to clipboard</span>
                 <img src="./logos/Icon awesome-whatsapp@3x.png"> 
-                +91 9015 344 200
+                <span id="number" onclick="copyNumber()" onmouseout="outFunc()">+91 9015 344 200</span>
             </div>
         </div>
 
     </div>
    
+
+    <script>
+        function copyEmail() {
+          var email = document.getElementById("email").innerText;
+          console.log(email);
+          navigator.clipboard.writeText(email);          
+          var tooltipe = document.getElementById("myTooltipe");
+          tooltipe.innerHTML = "Copied!";
+        }
+
+        function copyNumber() {
+          var number = document.getElementById("number").innerText;
+          console.log(number);
+          navigator.clipboard.writeText(number);
+          var tooltipn = document.getElementById("myTooltipn");
+          tooltipn.innerHTML = "Copied!";
+        }
+        
+        function outFunc() {
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copy to clipboard";
+        }
+</script>
 
 </body>
 </html>
