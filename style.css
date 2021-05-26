@@ -7,18 +7,12 @@ html{
     margin: 0;
     padding: 0;
     height: 100%;
-  margin: 0;
-  /* The image used */
+    margin: 0;
   background:url('./logos/Background.png');
-
-  /* Full height */
   height: 100%; 
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 body{
     
@@ -175,5 +169,65 @@ img:hover{
 height: 22px;
 }
 
+@media only screen and (max-width: 768px) {
+    html{
+    top:0;
+    left:0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0; 
+      
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
+body{
+    font-size: 30px;
+    border: 1px solid transparent;
+}
+
+.top-text {
+    margin-left: auto;
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+    margin-right: auto;
+}
+.text-right {
+    text-align: center;
+}
+.top{
+    text-align: center;
+}
+.logo{
+    padding-left: 1rem;
+}
+
+.planet{
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+hr{
+    width: 143px;
+}
+.lower img{
+    height: 23px;
+    margin: 0 7px;
+}
+.lower-info-text{
+    font-size: 15px;
+}
+.circle{
+    display: none;
+}
+.lower-info-text img{
+    height: 17px;
+    }
+
+}
 
