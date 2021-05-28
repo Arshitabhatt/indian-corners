@@ -234,6 +234,17 @@ height: 22px;
     visibility: visible;
     opacity: 1;
 }
+a{
+    font-size: 1px;
+  }
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     html{
@@ -274,6 +285,7 @@ body{
     padding-right: 1.5rem;
     padding-top: 0.5rem;
 }
+
 
 p{
     margin-bottom: 1rem;
