@@ -53,7 +53,7 @@ body{
     font-size: 16px;
     color: gray;
     width: fit-content;
-    margin-left: 16rem;
+    margin-left: 12rem;
     margin-top: 3rem;
     margin-bottom: -3rem;
 }
@@ -241,7 +241,7 @@ a{
 
 .partition{
     display: grid;
-    grid-template-columns: 26rem 43.6rem;
+    grid-template-columns: 22rem 43.6rem;
 }
 
 
